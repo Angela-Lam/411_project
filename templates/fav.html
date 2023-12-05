@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<nav>
+    <a href="/history">History</a>
+    <a href="/favorites">Favorites</a>
+    <a href="/home">Home</a>
+    <a href="/search">Search</a>
+</nav>
+<html>
+    <head>
+        <!-- [head content remains the same] -->
+    </head>
+    <body>
+    <main role="main" class="container extra-bottom">
+      <h1 class="mt-5">Favorites List</h1>
+      <p>Displaying favorite information</p>
+    </main>
+
+    <!-- Favorites Table -->
+    <div class="container table-responsive">          
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Video ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in items %}
+                    <tr>
+                        <td>{{ item.UserId }}</td>
+                        <td>{{ item.VideoId }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+    <footer class="footer">
+      <!-- [footer content remains the same] -->
+    </footer>
+
+    <!-- [scripts remain the same] -->
+  </body>
+</html>
