@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<nav>
+    <a href="/history">History</a>
+    <a href="/favorites">Favorites</a>
+    <a href="/home">Home</a>
+    <a href="/search">Search</a>
+</nav>
+<html>
+    <head>
+        <!-- [head content remains the same] -->
+    </head>
+    <body>
+    <main role="main" class="container extra-bottom">
+      <h1 class="mt-5">Search </h1>
+      <p>Displaying search filters</p>
+    </main>
+
+        
+
+    <form action="/handle_search" method="post">
+        <!--required keyword search-->
+        <label for="keyword">Keyword:</label>
+        <input type="text" id="keyword" name="keyword"><br>
+        <!--select video length-->
+        <div class="custom-select" style="width:200px;">
+            <select name="video Length">
+                <option value="0">Select video length:</option>
+                <option value="1">0-5min</option>
+                <option value="2">5-15min</option>
+                <option value="3">15-30min</option>
+                <option value="4">30-60min</option>
+                <option value="5">longer</option>
+            </select>
+        </div>
+        <div><!--select start and end date-->
+            <label for="start">Start Date:</label>
+            <input type="date" id="start" name="start-date" value="2023-12-06" min="2000-01-01" max="2023-12-31">
+        </div>
+    
+        <div>
+            <label for="end">End Date:</label>
+            <input type="date" id="end" name="end-date" value="2023-12-06" min="2000-01-01" max="2023-12-31">
+        </div>
+        <!--select video categroy-->
+        <div class="custom-select" style="width:200px;">
+            <select name="category">
+                <option value="0">Select Category:</option>
+                <option value="1">Film & Animation</option>
+                <option value="2">Autos & Vehicles</option>
+                <option value="10">Music</option>
+                <option value="15">Pets & Animals</option>
+                <option value="17">Sports</option>
+                <option value="18">Short Movies</option>
+                <option value="19">Travel & Events</option>
+                <option value="20">Gaming</option>
+                <option value="21">Videoblogging</option>
+                <option value="22">People & Blogs</option>
+                <option value="23">Comedy</option>
+                <option value="24">Entertainment</option>
+                <option value="25">News & Politics</option>
+                <option value="26">Howto & Style</option>
+                <option value="27">Education</option>
+                <option value="28">Science & Technology</option>
+                <option value="29">Nonprofits & Activism</option>
+                <option value="30">Movies</option>
+                <option value="31">Anime/Animation</option>
+                <option value="32">Action/Adventure</option>
+                <option value="33">Classics</option>
+                <option value="34">Comedy</option>
+                <option value="35">Documentary</option>
+                <option value="36">Drama</option>
+                <option value="37">Family</option>
+                <option value="38">Foreign</option>
+                <option value="39">Horror</option>
+                <option value="40">Sci-Fi/Fantasy</option>
+                <option value="41">Thriller</option>
+                <option value="42">Shorts</option>
+                <option value="43">Shows</option>
+                <option value="44">Trailers</option>
+            </select>
+        </div>
+        
+        <input type="submit" value="Search">
+    </form>
+
+    
+    <footer class="footer">
+      <!-- [footer content remains the same] -->
+    </footer>
+
+    <!-- [scripts remain the same] -->
+  </body>
+</html>

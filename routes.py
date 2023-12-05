@@ -68,6 +68,7 @@ def favorites():
 
 @app.route("/handle_search")
 def handle_search():
+    keyword = request.form.get("keyword")
     video_length = request.form.get('video Length')
     start_date = request.form.get('start-date')
     end_date = request.form.get('end-date')
